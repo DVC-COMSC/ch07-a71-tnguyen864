@@ -17,6 +17,8 @@ difference = []
 i = 0
 for i in range(len(numbers)):
     diff = avg - numbers[i]
+    if diff < 0:
+        diff = diff * -1
     print(f'{diff:.2f}', end = ' ')
 
 # Use this statement to print out the list element. # Replace the variable 'dist' with your variable
